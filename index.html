@@ -30,8 +30,8 @@
     <main class="content">
         <h1>-: Enter Bill Details :-</h1>
 
-        <form action="/print.html">
-            Invoice No. : <input type="text" name="invoice-no" placeholder="Enter Invoice Number ...">
+        <form id="add-details" action="print.html">
+            Invoice No. : <input type="text" id="inv-no" name="invoice-no" placeholder="Enter Invoice Number ...">
             Name : <input type="text" name="cust-name" placeholder="Enter Customer Name..."><br>
             Address : <input type="text" name="cust-address" placeholder="Enter Customer Address...">
             Mobile No. : <input type="number" name="mobile"><br>
@@ -59,11 +59,13 @@
             Months : <input type="number" name="months" placeholder="Enter months">
 
             Product Price : <input type="number" name="price" placeholder="Enter Product Price..."><br>
-<br>
+            <label id="error"></label>
             <input type="submit" value="Submit" id="submit">
-
+           
 
         </form>
+        <!-- <button id="submit" onclick="Check()">Submit</button> -->
+        
 
     </main>
 
